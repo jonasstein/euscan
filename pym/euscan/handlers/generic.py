@@ -168,7 +168,7 @@ def scan_url(pkg, url, options):
         template = helpers.template_from_url(resolved_url, ver)
         if '${' not in template:
             output.einfo(
-                "Url doesn't seems to depend on version: %s not found in %s" %
+                "URL does not depend on the version number (%s) and I could not access %s" %
                 (ver, resolved_url)
             )
             return []
